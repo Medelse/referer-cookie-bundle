@@ -1,0 +1,24 @@
+{
+    "name": "medelse/referer-cookie-bundle",
+    "type": "symfony-bundle",
+    "description": "The RefererCookieBundle is a Symfony Bundle to save referer into cookie when exists. Than cookie (referer) can be used later.",
+    "keywords": ["referer", "cookie", "medelse"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yannick Cenatiempo",
+            "email": "yannick.cenatiempo@medelse.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Medelse\\RefererCookieBundle\\": "" }
+    },
+    "require": {
+        "php": ">=7.0",
+        "symfony/framework-bundle": "^2.3|^3.0|^4.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0|^7.0"
+    }
+}

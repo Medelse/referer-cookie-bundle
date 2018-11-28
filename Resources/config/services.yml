@@ -1,0 +1,3 @@
+services:
+    medelse_referer_cookie.referer_cookie:
+        class: Medelse\RefererCookieBundle\RefererCookie\RefererCookie
