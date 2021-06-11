@@ -13,8 +13,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('medelse__referer_cookie');
+        $treeBuilder = new TreeBuilder('medelse__referer_cookie');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
