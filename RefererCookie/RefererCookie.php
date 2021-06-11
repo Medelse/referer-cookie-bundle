@@ -3,7 +3,7 @@
 namespace Medelse\RefererCookieBundle\RefererCookie;
 
 use DateTime;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use UnexpectedValueException;
 
 class RefererCookie
@@ -173,7 +173,7 @@ class RefererCookie
      * onKernelRequest called if autoInit is true
      * @param GetResponseEvent $event
      */
-    public function onKernelRequest(GetResponseEvent $event)
+    public function onKernelRequest(RequestEvent $event)
     {
         if (!$event->isMasterRequest()) {
             return;
